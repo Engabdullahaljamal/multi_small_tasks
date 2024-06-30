@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s all ease-in;
+}
+
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.task {
+  border-bottom: 2px solid #ddd;
+  padding: 30px 0;
+
+}
+
+
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #2b2b2b;
+  cursor: pointer;
+}
+
+/* =================================== Task 1 ====================================== */
+.calc {
+  width: 400px;
+  height: max-content;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
+
+
+
+}
+
+button,
+.bottom_num {
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  border-radius: 5%;
+  cursor: pointer;
+  background-color: black;
+  border: 0.5px solid white;
+  color: white;
+}
+
+.bottom_num {
+  width: 200px;
+}
+
+button:active,
+.bottom_num:active {
+  background-color: gray;
+}
+
+.result {
+  height: 100px;
+  width: 370px;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.result {
+
+  text-align: right;
+  font-size: 50px;
+  padding: 10px;
+
+}
+
+.gray_color {
+  background-color: gray;
+}
+
+.orang_color {
+  background-color: #e38021;
+}
+
+/* =================================== Task 2 ====================================== */
+#task-two-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  padding: 30px;
+  height: 250px;
+  position: relative;
+  border: 1px solid #2b2b2b;
+}
+
+#task-two-content p {
+  font-size: 12px;
+  padding: 10px 50px;
+}
+
+#mode-icon {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.dark-theme {
+  background-color: #000;
+  color: #fff;
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #000;
+
+}
+
+.theme {
+  transition: 0.3s all ease-in;
+}
+
+/* =================================== Task 3 ====================================== */
+.qa-box {
+  width: 500px;
+  margin-bottom: 15px;
+}
+
+.question-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: rgb(188 233 154 / 50%);
+  padding: 13px;
+  border-radius: 4px;
+
+}
+
+.questions {
+  font-size: 15px;
+  color: #2b2b2b;
+
+}
+
+.question-box i {
+  font-size: 12px;
+  color: #2b2b2b;
+  transition: 1s all;
+}
+
+.answer {
+  font-size: 13px;
+  color: rgb(128 128 128);
+  background-color: rgb(255 244 217);
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  display: none;
+}
+
+
+/* =================================== Task 4 ====================================== */
+.rate {
+  width: 500px;
+  padding: 50px 0;
+  background-color: rgb(3, 56, 82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.rate p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.stars {
+  display: flex;
+  gap: 15px;
+}
+
+.stars i {
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.4s ease-in;
+  font-size: 20px;
+}
+
+.stars .active {
+  color: goldenrod !important;
+}
+
+.description {
+  font-size: 13px !important;
+}
+
+/* =================================== Task 5 ====================================== */
+.tabs-wrapper {
+  width: 500px;
+  height: 100%;
+  background: #fff;
+}
+
+.tabs-wrapper .tabs_wrap {
+  padding: 20px;
+  border-bottom: 1px solid #ebedec;
+}
+
+.tabs-wrapper .tabs_wrap ul {
+  width: 100%;
+  display: flex;
+}
+
+.tabs-wrapper .tabs_wrap ul li {
+  width: 100%;
+  text-align: center;
+  background: #e9ecf1;
+  border-right: 1px solid #c1c4c9;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tabs-wrapper .tabs_wrap ul li:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.tabs-wrapper .tabs_wrap ul li:last-child {
+  border-right: 0px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.tabs-wrapper .tabs_wrap ul li:hover,
+.tabs-wrapper .tabs_wrap ul li.active {
+  background: #7fc469;
+  color: #fff;
+}
+
+.tabs-wrapper .container-tabs .item_wrap {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ebedec;
+  cursor: pointer;
+}
+
+.tabs-wrapper .container-tabs .item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item_wrap .item .item_left {
+  display: flex;
+  align-items: center;
+}
+
+.item_wrap .item_left img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.item_wrap .item_left .data {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.item_wrap .item_left .data .name {
+  font-weight: 600;
+}
+
+.item_wrap .item_left .data .distance {
+  color: #7f8b9b;
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.item_wrap .item_right .status {
+  position: relative;
+  color: #77818d;
+  font-size: 10px;
+}
+
+.item_wrap .item_right .status:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b3bbc8;
+}
+
+.item_wrap.offline .item_right .status {
+  color: #b3bbc8;
+}
+
+.item_wrap.online .item_right .status:before {
+  background: #7fc469;
+}
+
+.male-tab,
+.female-tab {
+  display: block;
+}
+
+/* =================================== Task 6 ====================================== */
+.small-img-group {
+  display: flex;
+  gap: 15px;
+}
+
+.single-pro-img {
+  display: flex;
+  width: 500px;
+  height: 350px;
+  gap: 10px;
+  align-items: center;
+}
+
+.single-pro-img>img {
+  width: 400px;
+}
+
+.small-img-group {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.small-img-group .small-col {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+}
+
+/* ============================== Task 7 =============================== */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-eight .form {
+  border-radius: 10px;
+  padding: 1.5rem 0;
+  font-weight: 500;
+  color: #2b4246;
+  max-width: 500px;
+}
+
+.form__title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding: 0 0 1rem 0;
+}
+
+.inputs {
+  border: 1px solid #87a3a6;
+  border-radius: 7px;
+  padding: 0.7rem;
+}
+
+.inputs:focus {
+  outline: 1px solid #0c7d69;
+}
+
+.errMsg {
+  display: none;
+  padding-left: 0.2rem;
+  font-size: 0.85rem;
+  color: red;
+  transition: opacity 0.2s ease;
+}
+
+form button[type="submit"] {
+  background-color: #0c7d69;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 7px;
+  border: 0;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 500px;
+  height: 60px;
+}
+
+.msg_res {
+  display: none;
+  padding: 10px;
+  color: rgb(15, 181, 15);
+  transition: opacity 0.2s ease;
+}
+
+
+/* ==================== additional night mode for all page ====================*/
+.head-img {
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.body-dark-theme {
+  background-color: rgb(102, 98, 98);
+  color: #fff;
+  transition: 0.3s all ease-in;
+}
